@@ -1,7 +1,7 @@
 # Getting Started with Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-TODO Web App developed by [Devansh Dubey](https://github.com/dubyeji0110) using ReactJS and NodeJS at backend.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+Timer App developed by [Devansh Dubey](https://github.com/dubyeji0110) using ReactJS and NodeJS at backend.
 
 ## Available Scripts
 
