@@ -26,7 +26,7 @@ Start with cloning this repo on your local machine:
 
 ```sh
 $ git clone https://github.com/dubeyji0110/Timer-with-history-API.git
-$ cd todoList/Timer-with-history-API
+$ cd Timer-with-history-API/
 ```
 
 To install and set up the library, run:
