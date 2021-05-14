@@ -8,12 +8,15 @@ function Controllers({
 	isPaused,
 	active,
 }) {
+
+	// start button
 	const StartButton = (
 		<div className='btn' onClick={handleStart}>
 			Start
 		</div>
 	);
 
+	// resume/pause/reset button
 	const ActiveButton = (
 		<div className='btn-grp'>
 			<div className='btn' onClick={handleReset}>

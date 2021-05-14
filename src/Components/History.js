@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { getHistory } from "../api";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function History() {
 	const [data, setData] = useState([]);
 
+	// calling getData func. everytime this component is rendered
 	useEffect(() => {
 		getData();
 	}, []);
 
+	// function to call api
 	const getData = () => {
 		getHistory().then((res) => {
-			// console.log(res);
+			console.log(res);
+			// setting the data received to an array
 			setData(res);
 		});
 	};
@@ -23,6 +26,8 @@ function History() {
 				<p>Time</p>
 				<p>Event</p>
 			</div>
+
+			{/* mapping over data returned from api call */}
 			{data.length ? (
 				data.map((d, i) => (
 					<div className='item' key={i}>

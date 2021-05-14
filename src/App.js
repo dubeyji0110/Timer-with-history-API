@@ -5,8 +5,12 @@ import History from "./Components/History";
 import StopWatch from "./Components/StopWatch";
 
 function App() {
+
+	// root component
 	return (
 		<div className='app'>
+
+			{/* used browser router for handling routes */}
 			<Router>
 				<Switch>
 					<Route path='/history'>

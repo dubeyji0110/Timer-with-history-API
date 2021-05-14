@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Controllers from "./Controllers";
 import Timer from "./Timer";
+import { Link } from "react-router-dom";
 import "../App.css";
 import { handlePressEvent } from "../api";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function StopWatch() {
 	const [isActive, setIsActive] = useState(false);
@@ -14,6 +14,7 @@ function StopWatch() {
 		let interval = null;
 
 		if (isActive && !isPaused) {
+			// setinterval for running the timer
 			interval = setInterval(() => {
 				setTime((time) => time + 10);
 			}, 10);
@@ -25,12 +26,14 @@ function StopWatch() {
 		};
 	}, [isActive, isPaused]);
 
+	// function to start the timer
 	const handleStart = () => {
 		createHistory("start");
 		setIsActive(true);
 		setIsPaused(false);
 	};
 
+	// function to pause/resume the timer
 	const handlePauseResume = () => {
 		if (!isPaused) {
 			createHistory("paused");
@@ -40,12 +43,14 @@ function StopWatch() {
 		setIsPaused(!isPaused);
 	};
 
+	// function to reset the timer
 	const handleReset = () => {
 		createHistory("reset");
 		setIsActive(false);
 		setTime(0);
 	};
 
+	// function to trigger the buttonPress event and send data to api
 	const createHistory = (e) => {
 		handlePressEvent({
 			time:

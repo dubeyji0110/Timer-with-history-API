@@ -2,6 +2,8 @@ import React from "react";
 import "../App.css";
 
 function Timer({ time }) {
+
+	// component to render time
 	return (
 		<div className='timer'>
 			<span className='digits'>
