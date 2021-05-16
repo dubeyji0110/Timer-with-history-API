@@ -1,7 +1,7 @@
 # Getting Started with Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-TODO Web App developed by [Devansh Dubey](https://github.com/dubyeji0110) using ReactJS and NodeJS at backend.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+Timer App developed by [Devansh Dubey](https://github.com/dubyeji0110) using ReactJS and NodeJS at backend.
 
 ## Available Scripts
 
@@ -18,7 +18,7 @@ Start with cloning this repo on your local machine:
 
 ```sh
 $ git clone https://github.com/dubeyji0110/Timer-with-history-API.git
-$ cd todoList/Timer-with-history-API
+$ cd Timer-with-history-API/
 ```
 
 To install and set up the library, run:
